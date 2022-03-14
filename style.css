@@ -1,0 +1,182 @@
+
+/* generales */
+/* html{
+    font-size: 62.5%;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #D7DEF1;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #D7DEF1;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+/* generales end */
+
+
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #003049;
+    height: 20vh;
+    width: 100%;
+}
+
+.h-index{
+    position: fixed;
+}
+/* header end */
+
+/* navegacion */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav ul li {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.download{
+    background-color: #B5280C;
+    background-size: 100%;
+    border-radius: .4rem;
+    border: 6px #B5280C solid;
+}
+
+.logo{
+    width: 10rem;
+    font-family: 'Roboto Serif', sans-serif;
+    font-style: italic;
+}
+
+/* navegacion end*/
+
+/* main */
+main{
+    background-color: #003049;
+    padding-bottom: 2vh;
+}
+
+/* descarga */
+.descarga{
+    height: 100vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 35vh;
+    margin-bottom: 2vh;
+}
+
+.descarga p{
+    margin: 2rem 0;
+}
+.descarga .download{
+    font-size: 2rem;
+}
+
+/* descarga end */
+
+/* tabla */
+.tabla{
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+th{
+    min-height: 4rem;
+    min-width: 10rem;
+    height: 4rem;
+    width: 10rem;
+}
+td{
+    min-height: 4rem;
+    min-width: 10rem;
+    height: 4rem;
+    width: 10rem;
+}
+/* tabla end */
+
+/* premios */
+.premios{
+    text-align: center;
+}
+.premios-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 1vh;
+
+}
+.premio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.premio img{
+    width: 10rem;
+}
+/* premios end */
+
+/* main end */
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    background-color: #17435A;
+    height: 17vh;
+}
+/* footer end */
+
+/* Resposive */
+@media (min-width: 768px) {
+    /* header */
+    .header{
+        height: 15vh;
+    }
+    .nav ul {
+        flex-direction: row;
+    }
+
+    /* main */
+    .tabla{
+        overflow-x: hidden;
+    }
+    .premios-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: .8rem;
+    }
+
+    /* footer */
+    .footer{
+        height: 10vh;
+    }
+}
+/* Resposive end */
