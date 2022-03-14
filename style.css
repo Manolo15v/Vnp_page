@@ -58,6 +58,12 @@ a{
 .nav ul li {
     margin-left: 1rem;
     margin-top: 1rem;
+    border-bottom: solid transparent 2px;
+    transition: border 1s;
+}
+
+.nav ul li:hover {
+    border-bottom: solid #D7DEF1 2px;
 }
 
 .download{
@@ -65,6 +71,12 @@ a{
     background-size: 100%;
     border-radius: .4rem;
     border: 6px #B5280C solid;
+    transition: all .5s;
+}
+
+.download:hover{
+    border: solid #D7DEF1 8px;
+    background-color: #972811;
 }
 
 .logo{
@@ -139,6 +151,11 @@ td{
 }
 .premio img{
     width: 10rem;
+    transition: all 1s;
+}
+
+.premio img:hover{
+    width: 13rem;
 }
 /* premios end */
 
