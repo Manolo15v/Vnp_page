@@ -19,7 +19,11 @@ a{
     text-decoration: none;
     color: #D7DEF1;
 }
-.contenedor {
+a:hover{
+    text-decoration: none;
+    color: #D7DEF1;
+}
+.container {
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
@@ -34,6 +38,7 @@ a{
     background-color: #003049;
     height: 20vh;
     width: 100%;
+    padding-top: 2vh;
 }
 
 .h-index{
@@ -171,6 +176,52 @@ td{
 }
 /* footer end */
 
+/* download */
+
+.download-main{
+    height: 70rem;
+}
+.planes{
+    text-align: center;
+}
+
+.planes h2{
+    margin-bottom: 2vh;
+}
+
+.planes-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.plan{
+    background-color: #D7DEF1;
+    color: #17435A;
+    padding: 2rem;
+    border-radius: 7px;
+    border: solid transparent 5px;
+    transition: all 1s;
+}
+
+.plan:hover{
+    cursor: pointer;
+    border: solid #178a9e 5px;
+    background-color: #c7cad4;
+}
+
+.plan h4{
+    font-size: 2rem;
+}
+.plan span{
+    font-size: 3rem;
+}
+
+
+/* download end */
+
 /* Resposive */
 @media (min-width: 768px) {
     /* header */
@@ -194,6 +245,24 @@ td{
     /* footer */
     .footer{
         height: 10vh;
+    }
+
+    /* download */
+    .download-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .download-main{
+        height: 47rem;
+    }
+    .planes-grid{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat( 3, 1fr);
     }
 }
 /* Resposive end */

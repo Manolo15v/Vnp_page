@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Serif:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="/img/snail-logo-p.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
     <title>SnailVPN</title>
 </head>
 <body>
     <header class="header">
-        <nav class="nav contenedor"><!--navegacion-->
+        <nav class="nav container"><!--navegacion-->
             <div>
                 <a href="../#" class="logo">
                     <h2>SnailVPN</h2>
@@ -28,25 +29,30 @@
     </header>
     <main>
  
-        <section class="contacto">
-            <form class="formulario"></form>
-                <fieldset>
-                    <legend>Para contactar con servicio tecnico llenar los campos</legend>
-
-                    <label >Nombre</label>
-                    <input type="text" placeholder="Tu Nombre" >
-
-                    <label >E-mail</label>
-                    <input type="email" placeholder="Tu Email" >
-
-                    <label>Problema</label>
-                    <textarea></textarea>
-                </fieldset>
+        <section class="contacto container">
+            <h3>Rellena los campos para contactar a servicio tecnico</h3>
+            <form class="">
+                <div class="row">
+                    <div class="mb-3 col-md-5 col-sm-12">
+                        <label class="form-label">Email de la cuenta</label>
+                        <input type="email" class="form-control" aria-describedby="emailHelp">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-5 col-sm-12">
+                        <label  class="form-label">Problema a presentado</label>
+                        <textarea class="form-control"></textarea>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </section>
 
     </main>
     <footer class="footer">
-        <nav class="nav contenedor"><!--navegacion_footer-->
+        <nav class="nav container"><!--navegacion_footer-->
             <ul>
                 <li>
                     <a href="./pages/contacto.html">Contacto</a>
@@ -55,5 +61,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
