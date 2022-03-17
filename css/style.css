@@ -23,10 +23,8 @@ a:hover{
     text-decoration: none;
     color: #D7DEF1;
 }
-.container {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+textarea{
+    height: 13rem;
 }
 /* generales end */
 
@@ -132,13 +130,6 @@ main{
 .premios{
     text-align: center;
 }
-.premios-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 1vh;
-
-}
 .premio {
     display: flex;
     flex-direction: column;
@@ -171,9 +162,6 @@ main{
 
 .download-main{
     height: 70rem;
-}
-.planes{
-    text-align: center;
 }
 
 .planes h2{
@@ -209,7 +197,6 @@ main{
 .plan span{
     font-size: 3rem;
 }
-
 
 /* download end */
 
