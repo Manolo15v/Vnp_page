@@ -39,6 +39,7 @@ a:hover{
     height: 20vh;
     width: 100%;
     padding-top: 2vh;
+    z-index: 2;
 }
 
 .h-index{
@@ -62,7 +63,6 @@ a:hover{
 }
 .nav ul li {
     margin-left: 1rem;
-    margin-top: 1rem;
     border-bottom: solid transparent 2px;
     transition: border 1s;
 }
@@ -80,7 +80,7 @@ a:hover{
 }
 
 .download:hover{
-    border: solid #D7DEF1 8px;
+    border: solid #972811 6px;
     background-color: #972811;
 }
 
@@ -88,6 +88,9 @@ a:hover{
     width: 10rem;
     font-family: 'Roboto Serif', sans-serif;
     font-style: italic;
+}
+.logo h2{
+    margin: 0;
 }
 
 /* navegacion end*/
@@ -123,18 +126,6 @@ main{
     overflow-x: scroll;
 }
 
-th{
-    min-height: 4rem;
-    min-width: 10rem;
-    height: 4rem;
-    width: 10rem;
-}
-td{
-    min-height: 4rem;
-    min-width: 10rem;
-    height: 4rem;
-    width: 10rem;
-}
 /* tabla end */
 
 /* premios */
