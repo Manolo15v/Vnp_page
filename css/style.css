@@ -23,10 +23,8 @@ a:hover{
     text-decoration: none;
     color: #D7DEF1;
 }
-.container {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+textarea{
+    height: 13rem;
 }
 /* generales end */
 
@@ -39,6 +37,7 @@ a:hover{
     height: 20vh;
     width: 100%;
     padding-top: 2vh;
+    z-index: 2;
 }
 
 .h-index{
@@ -62,7 +61,6 @@ a:hover{
 }
 .nav ul li {
     margin-left: 1rem;
-    margin-top: 1rem;
     border-bottom: solid transparent 2px;
     transition: border 1s;
 }
@@ -80,7 +78,7 @@ a:hover{
 }
 
 .download:hover{
-    border: solid #D7DEF1 8px;
+    border: solid #972811 6px;
     background-color: #972811;
 }
 
@@ -88,6 +86,9 @@ a:hover{
     width: 10rem;
     font-family: 'Roboto Serif', sans-serif;
     font-style: italic;
+}
+.logo h2{
+    margin: 0;
 }
 
 /* navegacion end*/
@@ -123,30 +124,11 @@ main{
     overflow-x: scroll;
 }
 
-th{
-    min-height: 4rem;
-    min-width: 10rem;
-    height: 4rem;
-    width: 10rem;
-}
-td{
-    min-height: 4rem;
-    min-width: 10rem;
-    height: 4rem;
-    width: 10rem;
-}
 /* tabla end */
 
 /* premios */
 .premios{
     text-align: center;
-}
-.premios-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 1vh;
-
 }
 .premio {
     display: flex;
@@ -180,9 +162,6 @@ td{
 
 .download-main{
     height: 70rem;
-}
-.planes{
-    text-align: center;
 }
 
 .planes h2{
@@ -218,7 +197,6 @@ td{
 .plan span{
     font-size: 3rem;
 }
-
 
 /* download end */
 
