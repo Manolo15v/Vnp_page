@@ -146,6 +146,13 @@ main{
 }
 /* premios end */
 
+/* ventajas */
+.ventaja{
+    border-radius: 7px;
+    background-color: #17435A;
+}
+/* ventajas end */
+
 /* main end */
 
 /* footer */
