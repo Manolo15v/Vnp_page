@@ -1,0 +1,265 @@
+$blanco: #d7def1;
+$gris: #c7cad4;
+$naranja: #b5280c;
+$rojo: #972811;
+$azulElectrico: #178a9e;
+$azul: #17435a;
+$azulOscuro: #003049;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: $blanco;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $blanco;
+    &:hover{
+        text-decoration: none;
+        color: $blanco;
+    }
+}
+textarea{
+    height: 13rem;
+}
+/* generales end */
+
+
+/* header */
+.header{
+    display: flex;
+    align-items: center;
+    background-color: $azulOscuro;
+    height: 20vh;
+    width: 100%;
+    padding-top: 2vh;
+    z-index: 2;
+}
+
+.h-index{
+    position: fixed;
+}
+/* header end */
+
+/* navegacion */
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+   
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        li {
+            margin-left: 1rem;
+            border-bottom: solid transparent 2px;
+            transition: border 1s;
+            
+            &:hover {
+                border-bottom: solid $blanco 2px;
+            }
+        }
+    }   
+}
+
+.download{
+    background-color: $naranja;
+    background-size: 100%;
+    border-radius: .4rem;
+    border: 6px $naranja solid;
+    transition: all .5s;
+    
+    &:hover{
+        border: solid $rojo 6px;
+        background-color: $rojo;
+    }
+}
+
+.logo{
+    width: 10rem;
+    font-family: 'Roboto Serif', sans-serif;
+    font-style: italic;
+    
+    h2{
+        margin: 0;
+    }
+}
+
+/* navegacion end*/
+
+/* main */
+main{
+    background-color: $azulOscuro;
+    padding-bottom: 2vh;
+}
+
+/* descarga */
+.descarga{
+    height: 100vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 35vh;
+    margin-bottom: 2vh;
+    
+    p{
+        margin: 2rem 0;
+    }
+    
+    .download{
+        font-size: 2rem;
+    }
+}
+
+/* descarga end */
+
+/* tabla */
+.tabla{
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+}
+
+/* tabla end */
+
+/* premios */
+.premios{
+    text-align: center;
+}
+.premio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+        width: 10rem;
+        transition: all 1s;
+        
+        &:hover{
+            width: 13rem;
+        }
+    }
+}
+
+/* premios end */
+
+/* ventajas */
+.ventaja{
+    border-radius: 7px;
+    background-color: $azul;
+}
+/* ventajas end */
+
+/* main end */
+
+/* footer */
+.footer{
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    background-color: $azul;
+    height: 17vh;
+}
+/* footer end */
+
+/* download */
+
+.download-main{
+    height: 70rem;
+}
+
+.planes h2{
+    margin-bottom: 2vh;
+}
+
+.planes-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.plan{
+    background-color: $blanco;
+    color: $azul;
+    padding: 2rem;
+    border-radius: 7px;
+    border: solid transparent 5px;
+    transition: all 1s;
+    &:hover{
+        cursor: pointer;
+        border: solid $azulElectrico 5px;
+        background-color: $gris;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+    
+    span{
+        font-size: 3rem;
+    }
+}
+
+
+
+/* download end */
+
+/* Resposive */
+@media (min-width: 768px) {
+    /* header */
+    .header{
+        height: 15vh;
+    }
+    .nav ul {
+        flex-direction: row;
+    }
+
+    /* main */
+    .tabla{
+        overflow-x: hidden;
+    }
+    .premios-grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: .8rem;
+    }
+
+    /* footer */
+    .footer{
+        height: 10vh;
+    }
+
+    /* download */
+    .download-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .download-main{
+        height: 47rem;
+    }
+    .planes-grid{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat( 3, 1fr);
+    }
+}
+/* Resposive end */
