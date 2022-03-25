@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    background-color: $azul;
+    height: 17vh;
+}
+
+@media (min-width: 768px){
+    .footer{
+        height: 10vh;
+    }
+}

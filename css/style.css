@@ -28,8 +28,6 @@ textarea {
   height: 13rem;
 }
 
-/* generales end */
-/* header */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,12 +42,16 @@ textarea {
   z-index: 2;
 }
 
+@media (min-width: 768px) {
+  .header {
+    height: 15vh;
+  }
+}
+
 .h-index {
   position: fixed;
 }
 
-/* header end */
-/* navegacion */
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,6 +94,15 @@ textarea {
   border-bottom: solid #d7def1 2px;
 }
 
+@media (min-width: 768px) {
+  .nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .download {
   background-color: #b5280c;
   background-size: 100%;
@@ -116,8 +127,6 @@ textarea {
   margin: 0;
 }
 
-/* navegacion end*/
-/* main */
 main {
   background-color: #003049;
   padding-bottom: 2vh;
@@ -192,8 +201,6 @@ main {
 }
 
 /* ventajas end */
-/* main end */
-/* footer */
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,24 +214,40 @@ main {
   height: 17vh;
 }
 
-/* footer end */
-/* download */
+@media (min-width: 768px) {
+  .footer {
+    height: 10vh;
+  }
+}
+
 .download-main {
   height: 70rem;
 }
 
-.planes h2 {
-  margin-bottom: 2vh;
+@media (min-width: 992px) {
+  .download-main {
+    height: 47rem;
+  }
 }
 
-.planes-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 1vh;
-  margin-bottom: 3vh;
+@media (min-width: 768px) {
+  .download-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60rem;
+  }
+}
+
+.planes h2 {
+  margin-bottom: 2vh;
 }
 
 .plan {
@@ -250,61 +273,3 @@ main {
 .plan span {
   font-size: 3rem;
 }
-
-/* download end */
-/* Resposive */
-@media (min-width: 768px) {
-  /* header */
-  .header {
-    height: 15vh;
-  }
-  .nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  /* main */
-  .tabla {
-    overflow-x: hidden;
-  }
-  .premios-grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    gap: .8rem;
-  }
-  /* footer */
-  .footer {
-    height: 10vh;
-  }
-  /* download */
-  .download-main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 60rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .download-main {
-    height: 47rem;
-  }
-  .planes-grid {
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Resposive end */
