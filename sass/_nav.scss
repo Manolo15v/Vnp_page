@@ -1,0 +1,53 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+   
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        li {
+            margin-left: 1rem;
+            border-bottom: solid transparent 2px;
+            transition: border 1s;
+            
+            &:hover {
+                border-bottom: solid $blanco 2px;
+            }
+        }
+    }   
+}
+
+@media (min-width: 768px) {
+    .nav ul {
+        flex-direction: row;
+    }
+}
+
+.download{
+    background-color: $naranja;
+    background-size: 100%;
+    border-radius: .4rem;
+    border: 6px $naranja solid;
+    transition: all .5s;
+    
+    &:hover{
+        border: solid $rojo 6px;
+        background-color: $rojo;
+    }
+}
+
+.logo{
+    width: 10rem;
+    font-family: 'Roboto Serif', sans-serif;
+    font-style: italic;
+    
+    h2{
+        margin: 0;
+    }
+}

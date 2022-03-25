@@ -1,0 +1,43 @@
+.download-main{
+    height: 70rem;
+}
+
+@media (min-width: 992px) {
+    .download-main{
+        height: 47rem;
+    }
+}
+@media (min-width: 768px){
+    .download-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60rem;
+    }
+}
+.planes h2{
+    margin-bottom: 2vh;
+}
+
+
+.plan{
+    background-color: $blanco;
+    color: $azul;
+    padding: 2rem;
+    border-radius: 7px;
+    border: solid transparent 5px;
+    transition: all 1s;
+    &:hover{
+        cursor: pointer;
+        border: solid $azulElectrico 5px;
+        background-color: $gris;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    span{
+        font-size: 3rem;
+    }
+}
