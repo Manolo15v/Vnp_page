@@ -2,17 +2,19 @@
     height: 70rem;
 }
 
-@media (min-width: 992px) {
-    .download-main{
-        height: 47rem;
-    }
-}
-@media (min-width: 768px){
+
+@include telefono{
     .download-main{
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 60rem;
+    }
+}
+
+@include tablet{
+    .download-main{
+        height: 47rem;
     }
 }
 .planes h2{
