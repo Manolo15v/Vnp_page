@@ -224,12 +224,6 @@ main {
   height: 70rem;
 }
 
-@media (min-width: 992px) {
-  .download-main {
-    height: 47rem;
-  }
-}
-
 @media (min-width: 768px) {
   .download-main {
     display: -webkit-box;
@@ -243,6 +237,12 @@ main {
         -ms-flex-pack: center;
             justify-content: center;
     height: 60rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .download-main {
+    height: 47rem;
   }
 }
 

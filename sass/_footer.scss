@@ -6,7 +6,7 @@
     height: 17vh;
 }
 
-@media (min-width: 768px){
+@include telefono{
     .footer{
         height: 10vh;
     }

@@ -23,7 +23,7 @@
     }   
 }
 
-@media (min-width: 768px) {
+@include telefono {
     .nav ul {
         flex-direction: row;
     }
