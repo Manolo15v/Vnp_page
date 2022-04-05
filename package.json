@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-vpn",
+  "version": "1.0.0",
+  "description": "web page diseñada para vender un servicio de cambio de direcion Ip",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "npm:undefined@*",
+    "nodemon": "npm:undefined@*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manolo15v/Vnp_page_p.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manolo15v/Vnp_page_p/issues"
+  },
+  "homepage": "https://github.com/Manolo15v/Vnp_page_p#readme"
+}
