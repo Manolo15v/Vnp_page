@@ -7,9 +7,13 @@ main{
 .descarga{
     height: 100vh;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 35vh;
     margin-bottom: 2vh;
+    
+    h1{
+        font-size: 3rem;
+    }
     
     p{
         margin: 2rem 0;
@@ -22,15 +26,6 @@ main{
 
 /* descarga end */
 
-/* tabla */
-.tabla{
-    display: flex;
-    justify-content: center;
-    overflow-x: scroll;
-}
-
-/* tabla end */
-
 /* premios */
 .premios{
     text-align: center;
@@ -40,13 +35,14 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
     
     img{
-        width: 10rem;
+        height: 9rem;
         transition: all 1s;
         
         &:hover{
-            width: 13rem;
+            height: 12rem;
         }
     }
 }
@@ -57,5 +53,7 @@ main{
 .ventaja{
     border-radius: 7px;
     background-color: $azul;
+    margin: 0.5rem;
+    font-size: 1.1rem;
 }
 /* ventajas end */

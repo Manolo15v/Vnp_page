@@ -1,0 +1,9 @@
+.contacto{
+    height: 100vh;
+}
+
+@include telefono {
+    .contacto{
+        height: 80vh;
+    }
+}
