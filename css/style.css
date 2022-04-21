@@ -81,6 +81,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  padding: 0 !important;
 }
 
 .nav ul li {
@@ -113,8 +114,8 @@ textarea {
 }
 
 .download:hover {
-  border: solid #972811 6px;
-  background-color: #972811;
+  border: solid #832310 6px;
+  background-color: #832310;
 }
 
 .logo {
@@ -136,9 +137,13 @@ main {
 .descarga {
   height: 100vh;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-top: 35vh;
   margin-bottom: 2vh;
+}
+
+.descarga h1 {
+  font-size: 3rem;
 }
 
 .descarga p {
@@ -150,18 +155,6 @@ main {
 }
 
 /* descarga end */
-/* tabla */
-.tabla {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow-x: scroll;
-}
-
-/* tabla end */
 /* premios */
 .premios {
   text-align: center;
@@ -181,16 +174,17 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.2rem;
 }
 
 .premio img {
-  width: 10rem;
+  height: 9rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .premio img:hover {
-  width: 13rem;
+  height: 12rem;
 }
 
 /* premios end */
@@ -198,6 +192,8 @@ main {
 .ventaja {
   border-radius: 7px;
   background-color: #17435a;
+  margin: 0.5rem;
+  font-size: 1.1rem;
 }
 
 /* ventajas end */
@@ -272,4 +268,14 @@ main {
 
 .plan span {
   font-size: 3rem;
+}
+
+.contacto {
+  height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    height: 80vh;
+  }
 }
